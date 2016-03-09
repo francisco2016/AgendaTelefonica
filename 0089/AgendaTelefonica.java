@@ -24,4 +24,13 @@ public class AgendaTelefonica
         agenda.put(name, number);
     }
 
+    /**	 * Devuelve el numero de teléfono del contacto indicando su nombre. Si el contacto no existe, 
+     * devuelve null.
+     */
+    public void lookupNumber(String name){
+        //devuelve el nº de teléfono, pero al ser un mt de tipo void, no devuelve nada, luego hemos de imprimir en pantalla.
+        System.out.println(agenda.get(name));//incocamos el mt, get() del HashMap agenda, pasandole el par. clave name
+                                //agenda.get(name) = decir que recupere el valor guardado "en el par pasado, name"
+    }
+
 }
