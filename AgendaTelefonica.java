@@ -1,3 +1,4 @@
+
 import java.util.HashMap;  //1º importamos la clase
 /**
  * Esta clase va a simular una agenda 
@@ -17,7 +18,7 @@ public class AgendaTelefonica{
         agenda.put(name, number);
     }
 
-    /**	 
+    /**  
      * Devuelve el numero de teléfono del contacto indicando su nombre. Si el contacto no existe devuelve null.
      */
     public void lookupNumber(String name){
@@ -25,4 +26,12 @@ public class AgendaTelefonica{
         System.out.println(agenda.get(name));//incocamos el mt, get() del HashMap agenda, pasandole el par. clave name
                                 //agenda.get(name) = decir que recupere el valor guardado "en el par pasado, name"
     }
+    
+    /**
+     * Print all keys
+     */
+    public void printAllNames(){
+        System.out.println(agenda.keySet());
+    }
+
 }
